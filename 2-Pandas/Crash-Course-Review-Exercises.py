@@ -25,7 +25,7 @@ np.random.seed(101)
 #         random integers from 1-100. (Keep in mind that the upper
 #         limit may be exclusive.)
 ######
-mat = np.random.randint(1, 100, (100, 5))
+mat = np.random.randint(1, 101, (100, 5))
 print(mat)
 
 #######
@@ -56,7 +56,7 @@ print(df)
 #         it in to pd.DataFrame(), check out the data= and index= parameters
 #         for that call.)
 
-new_mat = np.random.randint(0, 100, (50, 4))
+new_mat = np.random.randint(0, 101, (50, 4))
 print(new_mat)
 new_df = pd.DataFrame(new_mat, columns=['A', 'B', 'C', 'D'])
 print(new_df)
