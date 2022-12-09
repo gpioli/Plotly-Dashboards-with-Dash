@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 
+# Reading a CSV
 df = pd.read_csv('salaries.csv')
 print(df)
 
@@ -40,7 +41,7 @@ print(df[df['Age'] > 30])
 # Grabing unique values:
 print('Grabing unique values: ')
 print(df['Age'].unique())
-# And we can use nunique to know the lenght of that list
+# And we can use nunique to know the length of that list
 print(df['Age'].nunique())
 
 # Listing the columns
@@ -49,7 +50,7 @@ print(df.columns)  # notice as this is an attribute of the df and not a method, 
 # info() reports back information of our df
 print(df.info())
 
-# describe() will give us an statistical summary:
+# describe() will give us a statistical summary:
 print(df.describe())
 
 # index -> creates an automatic range index of the df
