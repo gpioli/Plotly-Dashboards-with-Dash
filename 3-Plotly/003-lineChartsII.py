@@ -23,6 +23,6 @@ data = [go.Scatter(x=new_df.columns,
                    name=name) for name in new_df.index]
 # for every name in the df, set x=columns, and set y to that 'name' # (rows) values
 
-pyo.plot(data)
+pyo.plot(data, filename='003-lineChartsII-temp-plot')
 
 
